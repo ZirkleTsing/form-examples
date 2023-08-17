@@ -296,9 +296,10 @@ export const DynamicSchemaComponents: React.FC<React.PropsWithChildren<DynamicSc
   }, [props.categoryId])
 
   if (!schema) return <div style={{ color: 'blue' }}>请先选择类目ID</div>
-  console.log(field.parent.address.entire)
+
   return (
-    <div>
+    <div style={{ backgroundColor: 'aliceblue', padding: 10 }}>
+      <div>这里是动态表单</div>
       <RecursionField
         schema={schema}
         onlyRenderProperties
