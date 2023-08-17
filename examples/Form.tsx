@@ -55,7 +55,7 @@ export const Demo = () => {
             <SchemaField.String
               name="categoryId"
               x-decorator="FormItem"
-              title="类目"
+              title="{{$index === 0 ? '主营类目' : '辅营类目'}}"
               required
               enum={[
                 { value: 1, label: '1' },
